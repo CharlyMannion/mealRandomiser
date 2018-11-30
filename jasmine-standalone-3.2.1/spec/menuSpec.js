@@ -6,7 +6,7 @@ describe("Menu", function() {
 
     describe("items on the menu", function() {
         it("has breakfast items", function() {
-            expect(menu.breakfastOptions).toEqual(["weetabix", "corn flakes", "rice krispies", "bran flakes", "muesli"])
+            expect(menu.breakfastOptions).toEqual([{name: "weetabix"}, {name: "corn flakes"}, {name: "rice krispies"}, {name: "bran flakes"}, {name: "muesli"}])
         })
     })
 
