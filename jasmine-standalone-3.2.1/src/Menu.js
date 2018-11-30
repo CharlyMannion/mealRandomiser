@@ -3,6 +3,8 @@ function Menu() {
 }
 
 Menu.prototype.selectBreakfastItem = function() {
-    var breakfastChoice = this.breakfastOptions[1].name;
+    var randomNumber = 1
+    // [1.. 5].rand
+    var breakfastChoice = this.breakfastOptions[randomNumber].name;
     return breakfastChoice;
 }
