@@ -13,11 +13,12 @@ function Menu() {
 //     return breakfastChoice;
 // }
 
-var numbersArray = [1, 2, 3, 4, 5]
-
-var randomNumber = numbersArray[(Math.random() * numbersArray.length) | 0]
-
 Menu.prototype.selectBreakfastItem = function() {
+    var numbersArray = [0, 1, 2, 3, 4]
+    var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
+    console.log(this.breakfastOptions)
+    console.log(this.breakfastOptions[1].name)
     var breakfastChoice = this.breakfastOptions[randomNumber].name;
     return breakfastChoice;
 }
+
