@@ -12,8 +12,11 @@ describe("Menu", function() {
 
     describe("the function to choose breakfast", function() {
         it("selects a breakfast item", function() {
+            console.log(menu.breakfastOptions)
+            menu.selectBreakfastItem();
             spyOn(Math, "random").and.returnValue(1);
-            expect(menu.selectBreakfastItem()).toEqual("corn flakes")
+            console.log(menu.breakfastChoice)
+            expect(menu.breakfastChoice).toEqual("corn flakes")
         })
     })
 })

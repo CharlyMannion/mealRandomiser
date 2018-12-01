@@ -1,5 +1,6 @@
 function Menu() {
     this.breakfastOptions = [{name: "weetabix"}, {name: "corn flakes"}, {name: "rice krispies"}, {name: "bran flakes"}, {name: "muesli"}]
+    // this.selectBreakfastItem = "corn flakes"
 }
 
 // Array.prototype.sample = function(){
@@ -16,8 +17,9 @@ function Menu() {
 Menu.prototype.selectBreakfastItem = function() {
     var numbersArray = [0, 1, 2, 3, 4]
     var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
-    console.log(this.breakfastOptions)
-    console.log(this.breakfastOptions[1].name)
+    // console.log(numbersArray[Math.floor(Math.random() * numbersArray.length)])
+    // console.log(this.breakfastOptions)
+    // console.log(this.breakfastOptions[randomNumber].name)
     var breakfastChoice = this.breakfastOptions[randomNumber].name;
     return breakfastChoice;
 }
