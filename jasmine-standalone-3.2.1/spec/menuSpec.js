@@ -15,7 +15,6 @@ describe("Menu", function() {
             console.log(menu.breakfastOptions)
             menu.selectBreakfastItem();
             spyOn(Math, "random").and.returnValue(1);
-            console.log(menu.breakfastChoice)
             expect(menu.breakfastChoice).toEqual("corn flakes")
         })
     })
