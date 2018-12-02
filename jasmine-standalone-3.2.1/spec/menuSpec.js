@@ -27,4 +27,12 @@ describe("Menu", function() {
         //     expect(menu.menuChoices).toContain('corn flakes')
         // })
     })
+
+    describe("the function to choose toast", function() {
+        it("selects a toast combination", function() {
+            menu.selectToast();
+            expect(menu.toastChoice).toBeDefined();
+        })
+    })
+
 })

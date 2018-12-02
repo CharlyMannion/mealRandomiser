@@ -12,3 +12,11 @@ Menu.prototype.selectBreakfastItem = function() {
     return "breakfast cereal: " + this.breakfastChoice;
 }
 
+Menu.prototype.selectToast = function() {
+    var numbersArray = [0, 1, 2]
+    var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
+    this.toastChoice = this.toastOptions[randomNumber].name;
+    // this.menuChoices.push(this.breakfastChoice)
+    return "toast: " + this.toastChoice;
+}
+
