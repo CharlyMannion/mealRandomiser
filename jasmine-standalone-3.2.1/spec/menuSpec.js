@@ -11,6 +11,12 @@ describe("Menu", function() {
         it("has toast combinations", function() {
             expect(menu.toastOptions).toEqual([{name: "1 white, 1 brown"}, {name: "2 white"}, {name: "2 brown"}])
         })
+        it("has cold pudding options", function() {
+            expect(menu.coldPuddingOptions).toEqual([{name: "yogurt"}, {name: "ice cream"}])
+        })
+        it("has supper options", function() {
+            expect(menu.snackOptions).toEqual([{name: "dairy milk"}, {name: "drifter"}, {name: "lion bar"}, {name: "kit kat chunky"}, {name: "Belvita"}, {name: "Nature Valley"}, {name: "cookie"}])
+        })
     })
 
     describe("the function to choose breakfast", function() {
@@ -32,6 +38,20 @@ describe("Menu", function() {
         it("selects a toast combination", function() {
             menu.selectToast();
             expect(menu.toastChoice).toBeDefined();
+        })
+    })
+
+    describe("the function to choose cold pudding", function() {
+        it("selects a cold pudding", function() {
+            menu.selectColdPudding();
+            expect(menu.coldPuddingChoice).toBeDefined();
+        })
+    })
+
+    describe("the function to choose snack", function() {
+        it("selects a snack", function() {
+            menu.selectSnack();
+            expect(menu.snackChoice).toBeDefined();
         })
     })
 
