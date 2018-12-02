@@ -16,5 +16,10 @@ describe("Menu", function() {
             // spyOn(Math, "random").and.returnValue(1);
             expect(menu.breakfastChoice).toBeDefined();
         })
+        it("gets added to the menu choice", function() {
+            menu.selectBreakfastItem();
+            breakfastChoiceSpy = jasmine.createSpyObj('breakfastChoice', ['corn flakes']) 
+            expect(menu.menuChoices).toContain('corn flakes')
+        })
     })
 })
