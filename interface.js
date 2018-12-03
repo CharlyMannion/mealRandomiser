@@ -32,4 +32,8 @@ $( document ).ready(function() {
         $("#randomSnack").hide();
         $("#snackChoice").show();
     }));
+
+    $('#resetPage').click(function() {
+        location.reload();
+    });
 });
