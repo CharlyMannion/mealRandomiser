@@ -3,9 +3,16 @@ $( document ).ready(function() {
 
     $("#choice").hide();
     $('#choice').text(menu.selectBreakfastItem());
-    
-    $("button").click(function(){
+
+    $("#randomCereal").on('click', (function(){
         $("#randomCereal").hide();
         $("#choice").show();
-    });
+    }));
 });
+
+
+
+// $('#temperature-down').on('click', function(){
+//     thermostat.decreaseTemperature();
+//     UpdateUi(thermostat);
+//   });
