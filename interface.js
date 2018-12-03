@@ -9,10 +9,3 @@ $( document ).ready(function() {
         $("#choice").show();
     }));
 });
-
-
-
-// $('#temperature-down').on('click', function(){
-//     thermostat.decreaseTemperature();
-//     UpdateUi(thermostat);
-//   });
