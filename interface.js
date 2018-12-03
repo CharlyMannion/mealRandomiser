@@ -1,11 +1,11 @@
 $( document ).ready(function() {
     var menu = new Menu();
 
-    $("#choice").hide();
-    $('#choice').text(menu.selectBreakfastItem());
+    $("#cerealChoice").hide();
+    $('#cerealChoice').text(menu.selectBreakfastItem());
 
     $("#randomCereal").on('click', (function(){
         $("#randomCereal").hide();
-        $("#choice").show();
+        $("#cerealChoice").show();
     }));
 });
