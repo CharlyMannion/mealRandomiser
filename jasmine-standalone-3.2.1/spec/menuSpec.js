@@ -55,4 +55,11 @@ describe("Menu", function() {
         })
     })
 
+    describe("the function to return the menu", function() {
+        it("returns all the items on the menu", function() {
+            console.log(menu.displayBreakfastOptions())
+            expect(menu.displayBreakfastOptions()).toEqual("Cereal Options: " + "weetabix, corn flakes, rice krispies, bran flakes, muesli");
+        })
+    })
+
 })

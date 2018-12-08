@@ -46,3 +46,8 @@ Menu.prototype.selectSnack = function() {
     return choiceOutput;
 }
 
+Menu.prototype.displayBreakfastOptions = function() {
+    // {name: "weetabix"}, {name: "corn flakes"}, {name: "rice krispies"}, {name: "bran flakes"}, {name: "muesli"}]
+    return "Cereal Options: " + "weetabix, corn flakes, rice krispies, bran flakes, muesli"
+}
+
