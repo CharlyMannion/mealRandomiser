@@ -55,5 +55,6 @@ $( document ).ready(function() {
         $("#toastOptions").show();
         $("#coldPuddingOptions").show();
         $("#snackOptions").show();
+        $("#resetPage").text("Go Back");
     }));
 });
