@@ -8,11 +8,13 @@ function Menu() {
 
 Menu.prototype.selectBreakfastItem = function() {
     var numbersArray = [0, 1, 2, 3, 4]
+    var choiceDescription = "breakfast cereal: "
     // var numbersArray = this.breakfastOptions.length.map
     var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
     this.breakfastChoice = this.breakfastOptions[randomNumber].name;
     // this.menuChoices.push(this.breakfastChoice)
-    return "breakfast cereal: " + this.breakfastChoice;
+    var choiceOutput = choiceDescription + this.breakfastChoice
+    return choiceOutput;
 }
 
 Menu.prototype.selectToast = function() {
