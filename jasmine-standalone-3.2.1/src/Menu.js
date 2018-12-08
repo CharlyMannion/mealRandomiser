@@ -17,11 +17,13 @@ Menu.prototype.selectBreakfastItem = function() {
 }
 
 Menu.prototype.selectToast = function() {
-    var numbersArray = [0, 1, 2]
+    var choiceDescription = "toast: "
+    var numbersArray = Array.from({length: this.toastOptions.length}, (x,i) => i);
     var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
     this.toastChoice = this.toastOptions[randomNumber].name;
     // this.menuChoices.push(this.breakfastChoice)
-    return "toast: " + this.toastChoice;
+    var choiceOutput = choiceDescription + this.toastChoice
+    return choiceOutput;
 }
 
 Menu.prototype.selectColdPudding = function() {
