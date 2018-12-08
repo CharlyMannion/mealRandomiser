@@ -2,7 +2,7 @@ $( document ).ready(function() {
     var menu = new Menu();
 
     $("#cerealOptions").hide();
-    $("#cerealOptions").text(menu.displayBreakfastOptions());
+    $("#cerealOptions").text(menu.displayCerealOptions());
 
     $("#toastOptions").hide();
     $("#coldPuddingOptions").hide();
