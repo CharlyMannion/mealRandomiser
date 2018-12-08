@@ -27,18 +27,21 @@ Menu.prototype.selectToast = function() {
 }
 
 Menu.prototype.selectColdPudding = function() {
-    var numbersArray = [0, 1]
+    var choiceDescription = "cold pudding: "
+    var numbersArray = Array.from({length: this.coldPuddingOptions.length}, (x,i) => i);    
     var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
     this.coldPuddingChoice = this.coldPuddingOptions[randomNumber].name;
     // this.menuChoices.push(this.breakfastChoice)
-    return "cold pudding: " + this.coldPuddingChoice;
+    var choiceOutput = choiceDescription + this.coldPuddingChoice
+    return choiceOutput;
 }
 
 Menu.prototype.selectSnack = function() {
-    var numbersArray = [0, 1, 2, 3, 4, 5, 6]
-    var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]
+    var choiceDescription = "snack: "
+    var numbersArray = Array.from({length: this.coldPuddingOptions.length}, (x,i) => i);    
+    var randomNumber = numbersArray[Math.floor(Math.random() * numbersArray.length)]    
     this.snackChoice = this.snackOptions[randomNumber].name;
     // this.menuChoices.push(this.breakfastChoice)
-    return "snack: " + this.snackChoice;
-}
+    var choiceOutput = choiceDescription + this.snackChoice
+    return choiceOutput;}
 
