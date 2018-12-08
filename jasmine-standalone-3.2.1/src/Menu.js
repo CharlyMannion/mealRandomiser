@@ -43,5 +43,6 @@ Menu.prototype.selectSnack = function() {
     this.snackChoice = this.snackOptions[randomNumber].name;
     // this.menuChoices.push(this.breakfastChoice)
     var choiceOutput = choiceDescription + this.snackChoice
-    return choiceOutput;}
+    return choiceOutput;
+}
 
