@@ -61,3 +61,11 @@ Menu.prototype.displayToastOptions = function() {
       });
     return "Toast Options: " + stringCereals.slice(0, -2)
 }
+
+Menu.prototype.displayColdPuddingOptions = function() {
+    var stringCereals = ""
+    this.coldPuddingOptions.forEach(function(element) {
+        stringCereals += (element.name + "; ")
+      });
+    return "Cold Pudding Options: " + stringCereals.slice(0, -2)
+}

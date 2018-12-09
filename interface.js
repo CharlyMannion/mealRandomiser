@@ -3,10 +3,10 @@ $( document ).ready(function() {
 
     $("#cerealOptions").hide();
     $("#cerealOptions").text(menu.displayCerealOptions());
-
     $("#toastOptions").hide();
     $("#toastOptions").text(menu.displayToastOptions());
     $("#coldPuddingOptions").hide();
+    $("#coldPuddingOptions").text(menu.displayColdPuddingOptions());
     $("#snackOptions").hide();
 
 

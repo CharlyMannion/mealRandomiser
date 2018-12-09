@@ -62,6 +62,9 @@ describe("Menu", function() {
         it("returns all the items on the menu", function() {
             expect(menu.displayToastOptions()).toEqual("Toast Options: " + "1 white & 1 brown; 2 white; 2 brown");
         })
+        it("returns all the items on the menu", function() {
+            expect(menu.displayColdPuddingOptions()).toEqual("Cold Pudding Options: " + "yogurt; ice cream");
+        })
     })
 
 })
