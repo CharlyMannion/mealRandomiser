@@ -48,11 +48,19 @@ Menu.prototype.selectSnack = function() {
 
 Menu.prototype.displayCerealOptions = function() {
     var stringCereals = ""
-    this.breakfastOptions.forEach(function(element) {
+    var options = this.breakfastOptions
+    // options.stringify();
+    options.forEach(function(element) {
         stringCereals += (element.name + "; ")
       });
     return "Cereal Options: " + stringCereals.slice(0, -2)
 }
+
+// Array.prototype.stringify = function(options) {
+//     options.forEach(function(element) {
+//         stringCereals += (element.name + "; ")
+//       });
+// }
 
 Menu.prototype.displayToastOptions = function() {
     var stringCereals = ""
