@@ -5,6 +5,7 @@ $( document ).ready(function() {
     $("#cerealOptions").text(menu.displayCerealOptions());
 
     $("#toastOptions").hide();
+    $("#toastOptions").text(menu.displayToastOptions());
     $("#coldPuddingOptions").hide();
     $("#snackOptions").hide();
 
@@ -60,7 +61,7 @@ $( document ).ready(function() {
         $("#toastOptions").show();
         $("#coldPuddingOptions").show();
         $("#snackOptions").show();
-        
+
         $("#resetPage").text("Go Back");
     }));
 });
