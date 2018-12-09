@@ -53,3 +53,11 @@ Menu.prototype.displayCerealOptions = function() {
       });
     return "Cereal Options: " + stringCereals.slice(0, -2)
 }
+
+Menu.prototype.displayToastOptions = function() {
+    var stringCereals = ""
+    this.toastOptions.forEach(function(element) {
+        stringCereals += (element.name + "; ")
+      });
+    return "Toast Options: " + stringCereals.slice(0, -2)
+}
