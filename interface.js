@@ -51,10 +51,16 @@ $( document ).ready(function() {
         $("#randomToast").hide();
         $("#randomColdPudding").hide();
         $("#randomSnack").hide();
+        $("#cerealChoice").hide();    
+        $("#toastChoice").hide();    
+        $("#coldPuddingChoice").hide();    
+        $("#snackChoice").hide();
+
         $("#cerealOptions").show();
         $("#toastOptions").show();
         $("#coldPuddingOptions").show();
         $("#snackOptions").show();
+        
         $("#resetPage").text("Go Back");
     }));
 });
