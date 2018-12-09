@@ -47,9 +47,9 @@ Menu.prototype.selectSnack = function() {
 }
 
 Menu.prototype.displayCerealOptions = function() {
+    var stringCereals = ""
     this.breakfastOptions.forEach(function(element) {
-        console.log(element.name);
+        stringCereals += (element.name + ", ")
       });
-    var displayCereal = "weetabix, corn flakes, rice krispies, bran flakes, muesli";
-    return "Cereal Options: " + displayCereal
+    return "Cereal Options: " + stringCereals.slice(0, -2)
 }
