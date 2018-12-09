@@ -69,3 +69,11 @@ Menu.prototype.displayColdPuddingOptions = function() {
       });
     return "Cold Pudding Options: " + stringCereals.slice(0, -2)
 }
+
+Menu.prototype.displaySnackOptions = function() {
+    var stringCereals = ""
+    this.snackOptions.forEach(function(element) {
+        stringCereals += (element.name + "; ")
+      });
+    return "Snack Options: " + stringCereals.slice(0, -2)
+}

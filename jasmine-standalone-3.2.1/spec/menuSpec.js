@@ -56,14 +56,17 @@ describe("Menu", function() {
     })
 
     describe("the function to return the menu", function() {
-        it("returns all the items on the menu", function() {
+        it("returns all the cereals on the menu", function() {
             expect(menu.displayCerealOptions()).toEqual("Cereal Options: " + "weetabix; corn flakes; rice krispies; bran flakes; muesli");
         })
-        it("returns all the items on the menu", function() {
+        it("returns all the toast on the menu", function() {
             expect(menu.displayToastOptions()).toEqual("Toast Options: " + "1 white & 1 brown; 2 white; 2 brown");
         })
-        it("returns all the items on the menu", function() {
+        it("returns all the cold puddings on the menu", function() {
             expect(menu.displayColdPuddingOptions()).toEqual("Cold Pudding Options: " + "yogurt; ice cream");
+        })
+        it("returns all the snacks on the menu", function() {
+            expect(menu.displaySnackOptions()).toEqual("Snack Options: " + "dairy milk; drifter; lion bar; kit kat chunky; Belvita; Nature Valley; cookie");
         })
     })
 

@@ -8,7 +8,7 @@ $( document ).ready(function() {
     $("#coldPuddingOptions").hide();
     $("#coldPuddingOptions").text(menu.displayColdPuddingOptions());
     $("#snackOptions").hide();
-
+    $("#snackOptions").text(menu.displaySnackOptions());
 
     $("#cerealChoice").hide();
     $('#cerealChoice').text(menu.selectBreakfastItem());
