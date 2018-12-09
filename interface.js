@@ -56,6 +56,7 @@ $( document ).ready(function() {
         $("#toastChoice").hide();    
         $("#coldPuddingChoice").hide();    
         $("#snackChoice").hide();
+        $("#explanationHeading").hide();
 
         $("#cerealOptions").show();
         $("#toastOptions").show();
