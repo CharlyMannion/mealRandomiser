@@ -1,7 +1,7 @@
 function Menu() {
     this.breakfastOptions = [{name: "weetabix"}, {name: "corn flakes"}, {name: "rice krispies"}, {name: "bran flakes"}, {name: "muesli"}]
     // this.menuChoices = []
-    this.toastOptions = [{name: "1 white, 1 brown"}, {name: "2 white"}, {name: "2 brown"}]
+    this.toastOptions = [{name: "1 white & 1 brown"}, {name: "2 white"}, {name: "2 brown"}]
     this.coldPuddingOptions = [{name: "yogurt"}, {name: "ice cream"}]
     this.snackOptions = [{name: "dairy milk"}, {name: "drifter"}, {name: "lion bar"}, {name: "kit kat chunky"}, {name: "Belvita"}, {name: "Nature Valley"}, {name: "cookie"}]
 }
@@ -49,7 +49,7 @@ Menu.prototype.selectSnack = function() {
 Menu.prototype.displayCerealOptions = function() {
     var stringCereals = ""
     this.breakfastOptions.forEach(function(element) {
-        stringCereals += (element.name + ", ")
+        stringCereals += (element.name + "; ")
       });
     return "Cereal Options: " + stringCereals.slice(0, -2)
 }

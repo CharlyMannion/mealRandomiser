@@ -9,7 +9,7 @@ describe("Menu", function() {
             expect(menu.breakfastOptions).toEqual([{name: "weetabix"}, {name: "corn flakes"}, {name: "rice krispies"}, {name: "bran flakes"}, {name: "muesli"}])
         })
         it("has toast combinations", function() {
-            expect(menu.toastOptions).toEqual([{name: "1 white, 1 brown"}, {name: "2 white"}, {name: "2 brown"}])
+            expect(menu.toastOptions).toEqual([{name: "1 white & 1 brown"}, {name: "2 white"}, {name: "2 brown"}])
         })
         it("has cold pudding options", function() {
             expect(menu.coldPuddingOptions).toEqual([{name: "yogurt"}, {name: "ice cream"}])
@@ -57,7 +57,10 @@ describe("Menu", function() {
 
     describe("the function to return the menu", function() {
         it("returns all the items on the menu", function() {
-            expect(menu.displayCerealOptions()).toEqual("Cereal Options: " + "weetabix, corn flakes, rice krispies, bran flakes, muesli");
+            expect(menu.displayCerealOptions()).toEqual("Cereal Options: " + "weetabix; corn flakes; rice krispies; bran flakes; muesli");
+        })
+        it("returns all the items on the menu", function() {
+            expect(menu.displayToastOptions()).toEqual("Toast Options: " + "1 white & 1 brown; 2 white; 2 brown");
         })
     })
 
